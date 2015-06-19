@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falcon Dashboard</title>
+    <!-- Bootstrap Styles-->
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <!-- FontAwesome Styles-->
+    <link href="static/css/font-awesome.css" rel="stylesheet">
+    <!-- Morris Chart Styles-->
+    <link href="static/css/agency.css" rel="stylesheet">
+    <!-- Custom Styles-->
+    <link href="static/css/custom-styles.css" rel="stylesheet">
+    <!-- Google Fonts-->
+    <link href="static/css/css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://webthemez.com/demo/Free-Bootstrap-Admin-Template-Dream/index.html"><img src="/static/img/cisco_logo_blue.png"></a>
+            </div>
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Doe</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Today</em>
+                                    </span>
+                                </div>
+                                <div>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem Ipsum has been the industry's standard dummy text ever since an kwilnw...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem Ipsum has been the industry's standard dummy text ever since the...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>Read All Messages</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-tasks fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 1</strong>
+                                        <span class="pull-right text-muted">60% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 2</strong>
+                                        <span class="pull-right text-muted">28% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100" style="width: 28%">
+                                            <span class="sr-only">28% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 3</strong>
+                                        <span class="pull-right text-muted">60% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% Complete (warning)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 4</strong>
+                                        <span class="pull-right text-muted">85% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+                                            <span class="sr-only">85% Complete (danger)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Tasks</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small">4 min</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small">12 min</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small">4 min</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small">4 min</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small">4 min</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav">
+
+                    <li>
+                        <a class="active-menu" href="http://webthemez.com/demo/Free-Bootstrap-Admin-Template-Dream/index.html"><i class="fa fa-dashboard"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="http://webthemez.com/demo/Free-Bootstrap-Admin-Template-Dream/ui-elements.html"><i class="fa fa-desktop"></i> UI Elements</a>
+                    </li>
+					<li>
+                        <a href="http://webthemez.com/demo/Free-Bootstrap-Admin-Template-Dream/chart.html"><i class="fa fa-bar-chart-o"></i> Charts</a>
+                    </li>
+                    <li>
+                        <a href="http://webthemez.com/demo/Free-Bootstrap-Admin-Template-Dream/tab-panel.html"><i class="fa fa-qrcode"></i> Tabs &amp; Panels</a>
+                    </li>
+
+                    <li>
+                        <a href="http://webthemez.com/demo/Free-Bootstrap-Admin-Template-Dream/table.html"><i class="fa fa-table"></i> Responsive Tables</a>
+                    </li>
+                    <li>
+                        <a href="http://webthemez.com/demo/Free-Bootstrap-Admin-Template-Dream/form.html"><i class="fa fa-edit"></i> Forms </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">Second Level Link</a>
+                            </li>
+                            <li>
+                                <a href="#">Second Level Link</a>
+                            </li>
+                            <li>
+                                <a href="#">Second Level Link<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li>
+                                        <a href="#">Third Level Link</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Third Level Link</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Third Level Link</a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://webthemez.com/demo/Free-Bootstrap-Admin-Template-Dream/empty.html"><i class="fa fa-fw fa-file"></i> Empty Page</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-header">
+                            Dashboard <small>Summary of your App</small>
+                        </h1>
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary text-center no-boder bg-color-green">
+                            <div class="panel-body">
+                                <i class="fa fa-bar-chart-o fa-5x"></i>
+                                <h3>8,457</h3>
+                            </div>
+                            <div class="panel-footer back-footer-green">
+                                Daily Visits
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary text-center no-boder bg-color-blue">
+                            <div class="panel-body">
+                                <i class="fa fa-shopping-cart fa-5x"></i>
+                                <h3>52,160 </h3>
+                            </div>
+                            <div class="panel-footer back-footer-blue">
+                                Sales
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary text-center no-boder bg-color-red">
+                            <div class="panel-body">
+                                <i class="fa fa fa-comments fa-5x"></i>
+                                <h3>15,823 </h3>
+                            </div>
+                            <div class="panel-footer back-footer-red">
+                                Comments
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary text-center no-boder bg-color-brown">
+                            <div class="panel-body">
+                                <i class="fa fa-users fa-5x"></i>
+                                <h3>36,752 </h3>
+                            </div>
+                            <div class="panel-footer back-footer-brown">
+                                No. of Visits
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+
+
+                    <div class="col-md-9 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Year Wise Spending/Saving
+                            </div>
+                            <div class="panel-body">
+                                <div style="position: relative;" id="morris-bar-chart"><svg style="overflow: hidden; position: relative; left: -0.799988px;" xmlns="http://www.w3.org/2000/svg" width="922" version="1.1" height="342"><desc>Created with RaphaÃ«l 2.1.0</desc><defs></defs><text font-weight="normal" font-family="sans-serif" font-size="12px" fill="#888888" stroke="none" font="10px &quot;Arial&quot;" text-anchor="end" y="307.6000003814697" x="34.10000038146973" style="text-anchor: end; font: 12px sans-serif;"><tspan dy="4.000006675720215">0</tspan></text><path stroke-width="0.5" d="M46.60000038146973,307.6000003814697H897" stroke="#aaaaaa" fill="none" style=""></path><text font-weight="normal" font-family="sans-serif" font-size="12px" fill="#888888" stroke="none" font="10px &quot;Arial&quot;" text-anchor="end" y="236.9500002861023" x="34.10000038146973" style="text-anchor: end; font: 12px sans-serif;"><tspan dy="4.000000476837158">25</tspan></text><path stroke-width="0.5" d="M46.60000038146973,236.9500002861023H897" stroke="#aaaaaa" fill="none" style=""></path><text font-weight="normal" font-family="sans-serif" font-size="12px" fill="#888888" stroke="none" font="10px &quot;Arial&quot;" text-anchor="end" y="166.30000019073486" x="34.10000038146973" style="text-anchor: end; font: 12px sans-serif;"><tspan dy="3.9999942779541016">50</tspan></text><path stroke-width="0.5" d="M46.60000038146973,166.30000019073486H897" stroke="#aaaaaa" fill="none" style=""></path><text font-weight="normal" font-family="sans-serif" font-size="12px" fill="#888888" stroke="none" font="10px &quot;Arial&quot;" text-anchor="end" y="95.65000009536746" x="34.10000038146973" style="text-anchor: end; font: 12px sans-serif;"><tspan dy="3.9999957084656046">75</tspan></text><path stroke-width="0.5" d="M46.60000038146973,95.65000009536746H897" stroke="#aaaaaa" fill="none" style=""></path><text font-weight="normal" font-family="sans-serif" font-size="12px" fill="#888888" stroke="none" font="10px &quot;Arial&quot;" text-anchor="end" y="25" x="34.10000038146973" style="text-anchor: end; font: 12px sans-serif;"><tspan dy="4">100</tspan></text><path stroke-width="0.5" d="M46.60000038146973,25H897" stroke="#aaaaaa" fill="none" style=""></path><text transform="matrix(1,0,0,1,0,7.2)" font-weight="normal" font-family="sans-serif" font-size="12px" fill="#888888" stroke="none" font="10px &quot;Arial&quot;" text-anchor="middle" y="320.1000003814697" x="836.2571428843906" style="text-anchor: middle; font: 12px sans-serif;"><tspan dy="4.000006675720215">2012</tspan></text><text transform="matrix(1,0,0,1,0,7.2)" font-weight="normal" font-family="sans-serif" font-size="12px" fill="#888888" stroke="none" font="10px &quot;Arial&quot;" text-anchor="middle" y="320.1000003814697" x="714.771428653172" style="text-anchor: middle; font: 12px sans-serif;"><tspan dy="4.000006675720215">2011</tspan></text><text transform="matrix(1,0,0,1,0,7.2)" font-weight="normal" font-family="sans-serif" font-size="12px" fill="#888888" stroke="none" font="10px &quot;Arial&quot;" text-anchor="middle" y="320.1000003814697" x="593.2857144219535" style="text-anchor: middle; font: 12px sans-serif;"><tspan dy="4.000006675720215">2010</tspan></text><text transform="matrix(1,0,0,1,0,7.2)" font-weight="normal" font-family="sans-serif" font-size="12px" fill="#888888" stroke="none" font="10px &quot;Arial&quot;" text-anchor="middle" y="320.1000003814697" x="471.80000019073486" style="text-anchor: middle; font: 12px sans-serif;"><tspan dy="4.000006675720215">2009</tspan></text><text transform="matrix(1,0,0,1,0,7.2)" font-weight="normal" font-family="sans-serif" font-size="12px" fill="#888888" stroke="none" font="10px &quot;Arial&quot;" text-anchor="middle" y="320.1000003814697" x="350.31428595951627" style="text-anchor: middle; font: 12px sans-serif;"><tspan dy="4.000006675720215">2008</tspan></text><text transform="matrix(1,0,0,1,0,7.2)" font-weight="normal" font-family="sans-serif" font-size="12px" fill="#888888" stroke="none" font="10px &quot;Arial&quot;" text-anchor="middle" y="320.1000003814697" x="228.82857172829765" style="text-anchor: middle; font: 12px sans-serif;"><tspan dy="4.000006675720215">2007</tspan></text><text transform="matrix(1,0,0,1,0,7.2)" font-weight="normal" font-family="sans-serif" font-size="12px" fill="#888888" stroke="none" font="10px &quot;Arial&quot;" text-anchor="middle" y="320.1000003814697" x="107.34285749707902" style="text-anchor: middle; font: 12px sans-serif;"><tspan dy="4.000006675720215">2006</tspan></text><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#0b62a4" ry="0" rx="0" r="0" height="282.6000003814697" width="44.05714283670698" y="25" x="61.78571466037205"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#7a92a3" ry="0" rx="0" r="0" height="254.34000034332274" width="44.05714283670698" y="53.260000038146984" x="108.84285749707902"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#0b62a4" ry="0" rx="0" r="0" height="211.95000028610227" width="44.05714283670698" y="95.65000009536746" x="183.27142889159066"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#7a92a3" ry="0" rx="0" r="0" height="183.6900002479553" width="44.05714283670698" y="123.91000013351442" x="230.32857172829765"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#0b62a4" ry="0" rx="0" r="0" height="141.30000019073486" width="44.05714283670698" y="166.30000019073486" x="304.7571431228092"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#7a92a3" ry="0" rx="0" r="0" height="113.04000015258788" width="44.05714283670698" y="194.56000022888185" x="351.8142859595162"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#0b62a4" ry="0" rx="0" r="0" height="211.95000028610227" width="44.05714283670698" y="95.65000009536746" x="426.2428573540279"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#7a92a3" ry="0" rx="0" r="0" height="183.6900002479553" width="44.05714283670698" y="123.91000013351442" x="473.30000019073486"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#0b62a4" ry="0" rx="0" r="0" height="141.30000019073486" width="44.05714283670698" y="166.30000019073486" x="547.7285715852464"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#7a92a3" ry="0" rx="0" r="0" height="113.04000015258788" width="44.05714283670698" y="194.56000022888185" x="594.7857144219533"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#0b62a4" ry="0" rx="0" r="0" height="211.95000028610227" width="44.05714283670698" y="95.65000009536746" x="669.2142858164651"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#7a92a3" ry="0" rx="0" r="0" height="183.6900002479553" width="44.05714283670698" y="123.91000013351442" x="716.271428653172"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#0b62a4" ry="0" rx="0" r="0" height="282.6000003814697" width="44.05714283670698" y="25" x="790.7000000476837"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#7a92a3" ry="0" rx="0" r="0" height="254.34000034332274" width="44.05714283670698" y="53.260000038146984" x="837.7571428843906"></rect></svg><div style="left: 64.8429px; top: 136px; display: none;" class="morris-hover morris-default-style"><div class="morris-hover-row-label">2006</div><div class="morris-hover-point" style="color: #0b62a4">
+  Series A:
+  100
+</div><div class="morris-hover-point" style="color: #7a92a3">
+  Series B:
+  90
+</div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                               Software Wise Billing Information
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-donut-chart"><svg style="overflow: hidden; position: relative; left: -0.5px;" xmlns="http://www.w3.org/2000/svg" width="266" version="1.1" height="342"><desc>Created with RaphaÃ«l 2.1.0</desc><defs></defs><path opacity="0" stroke-width="2" d="M133,255.5A82,82,0,0,0,210.59706686881458,200.00839892103482" stroke="#0b62a4" fill="none" style="opacity: 0;"></path><path stroke-width="3" d="M133,258.5A85,85,0,0,0,213.43598394938095,200.97821839375564L244.6640718356112,211.6462325936843A118,118,0,0,1,133,291.5Z" stroke="#ffffff" fill="#0b62a4" style=""></path><path opacity="1" stroke-width="2" d="M210.59706686881458,200.00839892103482A82,82,0,0,0,59.45891924303187,137.22729068435757" stroke="#3980b5" fill="none" style="opacity: 1;"></path><path stroke-width="3" d="M213.43598394938095,200.97821839375564A85,85,0,0,0,56.76839189826475,135.90024034354138L22.688378864547815,119.09093602653635A123,123,0,0,1,249.39560030322184,213.26259838155227Z" stroke="#ffffff" fill="#3980b5" style=""></path><path opacity="0" stroke-width="2" d="M59.45891924303187,137.22729068435757A82,82,0,0,0,132.9742389406644,255.49999595346225" stroke="#679dc6" fill="none" style="opacity: 0;"></path><path stroke-width="3" d="M56.76839189826475,135.90024034354138A85,85,0,0,0,132.97329646288384,258.49999580541817L132.96292920729755,291.49999417693346A118,118,0,0,1,27.172591105826356,121.30268659456334Z" stroke="#ffffff" fill="#679dc6" style=""></path><text stroke-width="0.7789069591822017" transform="matrix(1.2839,0,0,1.2839,-37.7521,-48.7939)" font-weight="800" font-size="15px" fill="#000000" stroke="none" font="10px &quot;Arial&quot;" text-anchor="middle" y="163.5" x="133" style="text-anchor: middle; font: 800 15px &quot;Arial&quot;;"><tspan dy="5.200006484985352">Software Billing</tspan></text><text stroke-width="0.5853658536585367" transform="matrix(1.7083,0,0,1.7083,-94.2083,-124.3125)" font-size="14px" fill="#000000" stroke="none" font="10px &quot;Arial&quot;" text-anchor="middle" y="183.5" x="133" style="text-anchor: middle; font: 14px &quot;Arial&quot;;"><tspan dy="4.8000030517578125"></tspan></text></svg></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /. ROW  -->
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Tasks Panel
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">7 minutes ago</span>
+                                        <i class="fa fa-fw fa-comment"></i> Commented on a post
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">16 minutes ago</span>
+                                        <i class="fa fa-fw fa-truck"></i> Order 392 shipped
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">36 minutes ago</span>
+                                        <i class="fa fa-fw fa-globe"></i> Invoice 653 has paid
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">1 hour ago</span>
+                                        <i class="fa fa-fw fa-user"></i> A new user has been added
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">1.23 hour ago</span>
+                                        <i class="fa fa-fw fa-user"></i> A new user has added
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">yesterday</span>
+                                        <i class="fa fa-fw fa-globe"></i> Saved the world
+                                    </a>
+                                </div>
+                                <div class="text-right">
+                                    <a href="#">More Tasks <i class="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Users Under the roof
+                            </div>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>S No.</th>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>User Name</th>
+                                                <th>Email ID.</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Jerry</td>
+                                                <td>David</td>
+                                                <td>jerdavid</td>
+                                                <td>jerdavid@cisco.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Rajesj</td>
+                                                <td>Arora</td>
+                                                <td>rajearor</td>
+                                                <td>rajearor@cisco.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Lisa</td>
+                                                <td>Wang</td>
+                                                <td>lisawan</td>
+                                                <td>lisawan@cisco.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Rutvik</td>
+                                                <td>Dudia</td>
+                                                <td>rdudia</td>
+                                                <td>rdudia@site.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Jacob</td>
+                                                <td>Hielsar</td>
+                                                <td>Jac4587</td>
+                                                <td>name@site.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>Wrapel</td>
+                                                <td>Dere</td>
+                                                <td>Wrap4585</td>
+                                                <td>name@site.com</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+					<span class="copyright">Copyright &copy;2015 Cisco Systems INC</span>
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script src="static/js/jquery-1.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="static/js/bootstrap.js"></script>
+    <!-- Metis Menu Js -->
+    <script src="static/js/jquery.js"></script>
+    <!-- Morris Chart Js -->
+    <script src="static/js/raphael-2.js"></script>
+    <script src="static/js/morris.js"></script>
+    <!-- Custom Js -->
+    <script src="static/js/custom-scripts.js"></script>
+
+
+
+
+</body></html>
